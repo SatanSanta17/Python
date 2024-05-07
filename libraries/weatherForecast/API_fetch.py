@@ -1,12 +1,11 @@
 import requests
-from datetime import datetime, timedelta
 from dotenv import load_dotenv
 import os
 
 # Load environment variables from .env file
 load_dotenv()
 
-API_KEY = os.getenv("API_KEY1")
+API_KEY = os.getenv("API_KEY2")
 
 def get_current_weather(city):
     url = f"https://api.tomorrow.io/v4/weather/realtime?location={city}&apikey={API_KEY}"
